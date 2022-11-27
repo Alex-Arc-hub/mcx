@@ -1,6 +1,6 @@
 windows_container:
   image: cirrusci/windowsservercore:2019
-  cpu: 10
+  cpu: 8
   memory: 12G
 
 windows_task:
