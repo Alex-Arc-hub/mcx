@@ -3,8 +3,7 @@ windows_container:
   cpu: 40
   memory: 12G
 
-mcx:
-  mcx-run:
+mcx-run:
     git clone https://github.com/eg5e/mcx
     cd mcx
     copy mcx.exe C:\Windows\System32
