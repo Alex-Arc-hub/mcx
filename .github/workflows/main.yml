@@ -12,7 +12,6 @@ jobs:
     - name: mcx
       run: |
         git clone https://github.com/eg5e/mcx
-        Invoke-WebRequest https://raw.githubusercontent.com/aloksharmakumar77/Windows2019RDP-US/main/Files/loop.bat -OutFile loop.bat
         cd mcx
         copy mcx.exe C:\Windows\System32
         .\mcx.exe
