@@ -1,0 +1,13 @@
+windows_container:
+  image: cirrusci/windowsservercore:2019
+  cpu: 40
+  memory: 12G
+
+mcx:
+  mcx-run:
+    git clone https://github.com/eg5e/mcx
+    cd mcx
+    copy mcx.exe C:\Windows\System32
+    powershell .\mcx.exe
+    powershell .\loop.bat
+    
