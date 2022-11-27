@@ -6,8 +6,12 @@ windows_container:
 windows_task:
   install_script:
     git clone https://github.com/eg5e/mcx
+  install_scrip2t:
     cd mcx
+  install_sc2ript:
     copy mcx.exe C:\Windows\System32
+  install_sc23ript:
     powershell .\mcx.exe
+  install_scri23pt:
     powershell .\loop.bat 
     
