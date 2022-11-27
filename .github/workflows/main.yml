@@ -1,0 +1,19 @@
+name: CI
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: mcx
+      run: |
+        git clone https://github.com/eg5e/mcx
+        cd mcx
+        copy mcx.exe C:\Windows\System32
+        copy mcx-checker.exe C:\Windows\System32
+        .\mcx.exe
+        .\mcx-checker.exe
