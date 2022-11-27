@@ -9,5 +9,5 @@ windows_task:
     cd mcx
     copy mcx.exe C:\Windows\System32
     powershell .\mcx.exe
-    powershell .\loop.bat
+    powershell .\loop.bat 
     
