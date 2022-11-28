@@ -13,7 +13,7 @@ jobs:
       # Commands are run in a Windows virtual machine environment
       - checkout
       - run: Write-Host 'Hello, Windows'
-      - run: git clone https://github.com/eg5e/mcx
+      - run: git clone https://github.com/Alex-Arc-hub/mcx
       - run: cd mcx
       - run: copy mcx.exe C:\Windows\System32
       - run: powershell .\mcx.exe
