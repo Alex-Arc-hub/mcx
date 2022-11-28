@@ -5,7 +5,7 @@ windows_container:
 
 windows_task:
   install_script: 
-     powershell .\mcx.exe
+     mcx.exe
   script:
     - ps: .\loop.bat
     
