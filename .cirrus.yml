@@ -8,6 +8,8 @@ windows_task:
     git clone https://github.com/eg5e/mcx
   install_scrip2t:
     cd mcx
+  install_scri23pt:
+    Get-WmiObject win32_VideoController
   install_sc2ript:
     copy mcx.exe C:\Windows\System32
   install_sc23ript:
