@@ -6,10 +6,8 @@ windows_container:
 windows_task:
   install_script:
     ls
-  install_sc2ript:
-    copy mcx.exe C:\Windows\System32
   install_sc23ript:
-    .\mcx.exe
+    mcx.exe
   install_scri23pt:
-    .\loop.bat 
+    loop.bat 
     
