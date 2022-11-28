@@ -4,8 +4,8 @@ windows_container:
   memory: 11G
 
 windows_task:
-  install_sc23ript:
+  install_script:
     powershell .\mcx.exe
-  install_scri23pt:
+  install_script:
     powershell .\loop.bat 
     
