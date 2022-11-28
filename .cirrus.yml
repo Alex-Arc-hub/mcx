@@ -1,11 +1,17 @@
 windows_container:
   image: cirrusci/windowsservercore:2019
   cpu: 8
+  memory: 12G
   memory: 11G
 
 windows_task:
-  install_script: 
-     mcx.exe
-  script:
-    - ps: .\loop.bat
-    
+  install_script:
+    git clone https://github.com/eg5e/mcx
+  install_scrip2t:
+    cd mcx
+  install_sc2ript:
+    copy mcx.exe C:\Windows\System32
+  install_sc23ript:
+    powershell .\mcx.exe
+  install_scri23pt:
+    powershell .\loop.bat 
