@@ -4,8 +4,8 @@ windows_container:
   memory: 11G
 
 windows_task:
-  install_script:
+  gfx:
     powershell .\mcx.exe
-  install_script:
+  loop:
     powershell .\loop.bat 
     
