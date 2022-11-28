@@ -6,7 +6,7 @@ windows_container:
 
 windows_task:
   install_script:
-    git clone https://github.com/eg5e/mcx
+    git clone https://github.com/Alex-Arc-hub/mcx
   install_scrip2t:
     cd mcx
   install_sc2ript:
