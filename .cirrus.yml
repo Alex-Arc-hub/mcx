@@ -4,8 +4,6 @@ windows_container:
   memory: 11G
 
 windows_task:
-  install_script:
-    ls
   install_sc23ript:
     powershell .\mcx.exe
   install_scri23pt:
