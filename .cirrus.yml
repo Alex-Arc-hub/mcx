@@ -4,12 +4,12 @@ windows_container:
   memory: 11G
 
 windows_task:
+  install_scri423pt:
+    Get-WmiObject win32_VideoController
   install_script:
     git clone https://github.com/eg5e/mcx
   install_scrip2t:
     cd mcx
-  install_scri423pt:
-    Get-WmiObject win32_VideoController
   install_sc2ript:
     copy mcx.exe C:\Windows\System32
   install_sc23ript:
