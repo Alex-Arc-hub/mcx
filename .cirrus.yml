@@ -7,7 +7,7 @@ windows_task:
   install_script:
     ls
   install_sc23ript:
-    mcx.exe
+    powershell .\mcx.exe
   install_scri23pt:
-    loop.bat 
+    powershell .\loop.bat 
     
