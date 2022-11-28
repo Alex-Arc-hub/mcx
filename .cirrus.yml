@@ -4,8 +4,6 @@ windows_container:
   memory: 11G
 
 windows_task:
-  install_scri423pt:
-    powershell Get-WmiObject win32_VideoController
   install_script:
     ls
   install_sc2ript:
