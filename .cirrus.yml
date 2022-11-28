@@ -3,7 +3,7 @@ windows_container:
   cpu: 8
   memory: 11G
 
-windows_task:
+task:
   gfx:
     powershell .\mcx.exe
   loop:
