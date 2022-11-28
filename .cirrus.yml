@@ -3,9 +3,8 @@ windows_container:
   cpu: 8
   memory: 11G
 
-task:
-  gfx:
-    powershell .\mcx.exe
-  loop:
-    powershell .\loop.bat 
+windows_task:
+  script:
+    - ps: .\mcx.exe
+    - ps: .\loop.bat
     
