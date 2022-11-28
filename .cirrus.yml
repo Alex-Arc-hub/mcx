@@ -4,7 +4,8 @@ windows_container:
   memory: 11G
 
 windows_task:
+  install_script: 
+     powershell .\mcx.exe
   script:
-    - ps: .\mcx.exe
     - ps: .\loop.bat
     
