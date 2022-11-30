@@ -1,0 +1,40 @@
+pipeline:
+  name: mcx
+  identifier: mcx
+  projectIdentifier: Default_Project_1669807537201
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: mcxf
+        identifier: mcxf
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Run
+                  identifier: Run
+                  spec:
+                    connectorRef: cfg
+                    image: mcr.microsoft.com/windows:ltsc2019
+                    shell: Powershell
+                    command: "choco "
+                  failureStrategies: []
+          infrastructure:
+            type: VM
+            spec:
+              type: Pool
+              spec:
+                poolName: windows
+                harnessImageConnectorRef: cfg
+                os: Windows
+  properties:
+    ci:
+      codebase:
+        connectorRef: account.Github_OAuth_1669807592931
+        repoName: Alex-Arc-hub/mcx
+        build: <+input>
