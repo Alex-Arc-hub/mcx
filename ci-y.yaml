@@ -22,7 +22,7 @@ pipeline:
                     connectorRef: cfg
                     image: mcr.microsoft.com/windows:ltsc2019
                     shell: Powershell
-                    command: "choco "
+                    command: echo "ggg"
                   failureStrategies: []
           infrastructure:
             type: VM
